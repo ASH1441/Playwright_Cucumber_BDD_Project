@@ -21,7 +21,7 @@ report.generate({
         title: "Test Info",
         data: [
             { label: "Project", value: "Coffeeshop Application" },
-            { label: "Release", value: "1.1.1" },
+            { label: "Release", value: "Version_2.0.1" },
             { label: "Cycle", value: "Smoke-1" }
         ],
     },
