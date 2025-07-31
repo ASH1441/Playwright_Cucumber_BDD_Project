@@ -1,0 +1,32 @@
+{
+  "name": "play-ts-cucumber",
+  "version": "1.0.0",
+  "description": "Playwright Cucumber TS framework - The easiest way to learn",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx ts-node src/helper/report/init.ts",
+    "test": "cross-env ENV=local cucumber-js --config=config/cucumber.js || true",
+    "report": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt",
+    "lint:report": "eslint -f html -o reports/lint-report.html || true"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber - TS",
+    "playwright-cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@eslint/js": "^9.31.0",
+    "@playwright/test": "1.35.0",
+    "@types/node": "^24.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.3.0",
+    "ts-node": "^10.9.1",
+    "winston": "^3.8.2"
+  }
+}
