@@ -10,7 +10,7 @@ Background:
         Then Login should be success
 
       Scenario: Login should not be success
-        When User enters valid username "non-tester" and password "passwort"
+        When User enters valid username "non-tester" and password "passwort123"
         And User click on the login button
         Then Login should fail
 
